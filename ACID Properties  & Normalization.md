@@ -30,7 +30,7 @@ assuming we have this table with data lets using it to normalization:
 - Insertion Anomaly - suppose for a new admission, we have a student but if a student has not opted for any subject yet then we have to insert NULL there, leading to insertion anomaly.
 - Deletion anomaly - If id 401 has only one subject and temporarily he drops it,
 
-### Normalisation Form:
+### Normalization Forms:
 
 #### 1. First Normal Form
 
