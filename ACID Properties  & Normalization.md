@@ -3,19 +3,23 @@
 Acid Properties stands for _Atomicity Consistency Isolation Durability_
 
 - Atomicity: This means that "all or nothing ". When a transaction happens is either the transaction happens fully or it's aborted no in betweens
+
 - Consistency: it ensures that any changes to values in an instance are same across other values in the same instance
+
 - isolation : isolation is needed when there are concurrent ==transactions== . This ensures that each transaction happens separately and independently
+
 - Durability: Durability refers to the ability of the system to recover committed transaction updates if either the system or storage fails.
 
-## Normalisation:
+## Normalization:
 
 Is a technique which is used to organise the data in the database. It is a systematic approach to remove the data reduced data redundancy
 assuming we have this table with data lets using it to normalization:
-| ID | Name| Address| Subject|
-|----|-----|--------|--------|
-| 201|sam | judy | Maths |
-| 202|jonte | kinoo | bio |
-| 203| kamau| wakama| physic |
+
+| ID  | Name  | Address | Subject |
+| --- | ----- | ------- | ------- |
+| 201 | sam   | judy    | Maths   |
+| 202 | jonte | kinoo   | bio     |
+| 203 | kamau | wakama  | physic  |
 
 - To remove data redundancy
 - Ensuring data dependencies is proper
@@ -80,7 +84,7 @@ In student table the candidate key will be Student column , because all other co
 #### 3. Third Normal Form
 
 - A Relationship is in third Normal form if it is in second Normal form and it contains no transitive dependencies.
-- Considere relation R containing attribute A,B and C
+- Consider relation R containing attribute A,B and C
 - if A-> B and C then A-> c
 - transitive dependencies : three attributes with the above dependencies\
   **example:** Student_details table
@@ -106,7 +110,7 @@ Address Table:
 - amount of data duplicate is reduced
 - data integrity achieved
 
-#### 4. (BCNF)
+#### 4. Boyce and Codd Normal Form(BCNF)
 
 This is a higher version of third Normal form. This form deals with certain types of anomaly not handled in 3NF
 
